@@ -1,18 +1,28 @@
+body {
+    display: block;
+    /* margin: 8px; */
+    background-color: #E6F0EC;
+}
 
 .Sidebar {
-    width: 70px;
+    width:10vw;
     background: #0f172a;
     color: white;
     padding: 20px;
+    border-radius: 6px;
 }
 .search {
-    width: 96vw;
-    border: 1px solid grey;
-    margin-left: 126px;
+    width: 88.5vw;
+       margin-top: -18px;
     height: 34px;
+    border-radius: 8px;
+    padding: 16px;
+     background-color: #f1f3f6;
 }
 table{
+    width: 88vw;
     border-radius: 16px;
+    height:20vh;
 }
 th{
     background-color:grey;
@@ -22,52 +32,47 @@ tr:nth-child(even){
 }
 .boxContainer{
     display: flex;
-    border:1px solid red;
-    flex-wrap: wrap;
 }
-.awesome{
-    border:1px solid #fff;
-    border-radius:16px;
-
-    width:12px
+.box {
+    width: 18vw;
+    margin: 40px 12px;
+    border-radius: 6px;
+    background-color: #f1f3f6;
+    height: 30vh;
+    padding: 10px;
 }
-.financesummary{
-    border-radius:16px;
-
-    width: 12px;
+.Jack {
+   width: 26vw;
+    margin-top: 40px;
+    border-radius: 6px;
+    background-color: #f1f3f6;
+    height: 30vh;
 }
-.box2{
-    height:20px;
+.box1 {
+    border-radius: 6px;
+    background-color: #f1f3f6;
+    height: 40vh;
 }
-.box{
-    height:90px;
+.awesome {
+    width: 27vw;
+    margin: 0px 12px;
 }
-.Jack{
-    width:10px;
-    border:1px solid red;
+.financesummary {
+    width: 61vw;
+    margin: 0px 12px;
 }
-.box1{
-    border:1px solid red;
-    width:10px;
-}
-.box2{
-    border:1px solid red;
-    width:14px;
-}
-.box3{
-    border:1px solid red;
-    width:15px;
-}
-.container2{
-    display: flex;
+.tableWrap {
+    margin-top: 20px;
+    background-color: #f1f3f6;
+    border-radius: 16px;
+    padding: 20px;
+    width:88vw;
 }
 .container {
     display: flex;
     height: 100vh;
 }
-.boxContainer1{
-    display: flex;
-}
+
 .main {
     padding: 20px;
 }
