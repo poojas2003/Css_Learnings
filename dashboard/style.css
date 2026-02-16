@@ -1,78 +1,104 @@
-body {
-    display: block;
-    /* margin: 8px; */
-    background-color: #E6F0EC;
+th {
+    background-color: grey;
+    text-align: left;
 }
+
+tr:nth-child(even) {
+    background-color: rgb(237, 228, 228);
+}
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: #E6F0EC;
+  font-family: Arial;
+}
+
 
 .Sidebar {
-    width:10vw;
-    background: #0f172a;
-    color: white;
-    padding: 20px;
-    border-radius: 6px;
-}
-.search {
-    width: 88.5vw;
-       margin-top: -18px;
-    height: 34px;
-    border-radius: 8px;
-    padding: 16px;
-     background-color: #f1f3f6;
-}
-table{
-    width: 88vw;
-    border-radius: 16px;
-    height:20vh;
-}
-th{
-    background-color:grey;
-}
-tr:nth-child(even){
-    background-color:rgb(237, 228, 228);
-}
-.boxContainer{
-    display: flex;
-}
-.box {
-    width: 18vw;
-    margin: 40px 12px;
-    border-radius: 6px;
-    background-color: #f1f3f6;
-    height: 30vh;
-    padding: 10px;
-}
-.Jack {
-   width: 26vw;
-    margin-top: 40px;
-    border-radius: 6px;
-    background-color: #f1f3f6;
-    height: 30vh;
-}
-.box1 {
-    border-radius: 6px;
-    background-color: #f1f3f6;
-    height: 40vh;
-}
-.awesome {
-    width: 27vw;
-    margin: 0px 12px;
-}
-.financesummary {
-    width: 61vw;
-    margin: 0px 12px;
-}
-.tableWrap {
-    margin-top: 20px;
-    background-color: #f1f3f6;
-    border-radius: 16px;
-    padding: 20px;
-    width:88vw;
-}
-.container {
-    display: flex;
-    height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100vh;
+  background: black;
+  color: white;
 }
 
+
 .main {
-    padding: 20px;
+  margin-left: 80px;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.search {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 100;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.container1 {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 20px;
+   margin-bottom: 20px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1.5fr 3.5fr;
+  gap: 20px;
+}
+
+/* Box */
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  height: 150px;
+}
+
+/* Table */
+.tableWrap {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+@media (max-width: 900px) {
+  .container1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .container1 {
+    grid-template-columns: 1fr;
+  }
+  .container2 {
+    grid-template-columns: 1fr;
+  }
+  .Sidebar {
+    width: 60px;
+  }
+
+  .main {
+    margin-left: 60px;
+  }
 }
