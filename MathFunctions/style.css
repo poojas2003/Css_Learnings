@@ -1,19 +1,26 @@
-.div1{
-   height:calc(20vh + 10px);
-   width:calc(50% - 10px);
-   border:1px solid red;
+.div1 {
+    height: calc(20vh + 10px);
+    width: calc(50% - 10px);
+    border: 1px solid red;
 }
-.div2{
-    height:min(800px,700px,900px);
-    border:1px solid black;
+
+.div2 {
+    height: min(800px, 700px, 900px);
+    border: 1px solid black;
 }
-.div3{
-    height:max(50vh,30vh,200px);
-    border:1px solid green;
+
+.div3 {
+    height: max(50vh, 30vh, 200px);
+    border: 1px solid green;
 }
-.div4{
-    height:clamp(100px,50px,75px);
-    border:1px solid orange;
-    font-size:min(5vw,20px,10px);
-    width:clamp(100px,50%,300px);
+
+.div4 {
+    height: clamp(100px, 50px, 75px);
+    border: 1px solid orange;
+    font-size: clamp(20px, 40px, 80px);
+    font-size: clamp(20px, 10px, 80px);
+    font-size: clamp(20px, 100px, 80px);
+    font-size: clamp(16px, 4vw, 32px);
+    font-size: clamp(24px, 20px, 64px);
+    width: clamp(100px, 50%, 300px);
 }
