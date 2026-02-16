@@ -10,3 +10,6 @@ a:visited{
 a:active{
     color:yellow;
 }
+a:hover{
+    color:palevioletred;
+}
